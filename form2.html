@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>more forms</title>
+</head>
+<body>
+	<h1>FEEDBACK FORM</h1>
+	<p>PLEASE FILL OUT THIS FORM TO HELP
+	US IMPROVE OUR SITE.</p>
+
+	<form method="post" action="http://www.deitel.com">
+		<!--hidden inputs contain non-visual-->
+		<!--information that will also be submitted-->
+		<input type="hidden"  name="recipient"
+		value="deitel@deitel.com">
+		<input type="hidden" name="subject"
+		value="feedback form">
+		<input type="hidden" name="redirect"
+		value="main.html">
+		<!--<input type = "text"> inserts a text field-->
+		<p><label>NAME:
+			<input name="name" type="text" size="25">
+		</label></p>
+
+		<!--<textarea>creates a multiline textbox-->
+			<p><label>COMENTS:<br>
+				<textarea name="comments"
+				rows="4"cols = "36">ENTER COMMENTS HERE.</textarea>
+			</label></p>
+
+			<!--<input type = "password">inserts a -->
+			<!--textbox whose display is masked with-->
+			<!--asterisk characters-->
+			<p><label>EMAIL ADDRESS:
+				<input name="email" type="password" size="25">
+			</label></p>
+			<p>
+				<strong>THINGS YOU LIKED:</strong><br>
+
+				<label>SITE DESIGN
+					<input name="thingsliked" type="checkbox"
+					value="design"></label>
+					<label>LINKS
+						<input name=" thingsliked" type="checkbox"
+						value="links"></label>
+					<label>EASE OF USE
+						<input name="thingsliked" type="checkbox"
+						value="ease"></label>
+					<label>IMAGES
+						<input name="thingsliked" type="checkbox"
+						value="images"></label>
+					<label>SOURCE CODE
+						<input name="thingsliked" type="checkbox"
+						value="code"></label>
+			</p>
+			<!--<input type = "radio"> creates a radio-->
+			<!--button. the difference between radio buttons-->
+			<!--and checkboxes is that only one radio buttons-->
+			<!--in a group can be selected.-->
+
+			<p>
+				<strong>HOW DID YOU GET TO OUR SITE?:</strong><br>
+
+				<label>SEARCH ENGINE
+					<input name="howtosite" type="radio"
+					value="search engine" checked></label>
+					<label>links from another site
+						<label>LINKS
+						<input name="howtosite" type="radio"
+						value="link"></label>
+					<label>EASE OF USE
+						<input name="howtosite" type="radio"
+						value="deitel.com"></label>
+					<label>IMAGES
+						<input name="howtosite" type="radio"
+						value="book"></label>
+					<label>SOURCE CODE
+						<input name="howtosite" type="radio"
+						value="other"></label>
+					</p>
+					<label>RATE OUR SITE:
+
+						<!--THE <SELECT<TAG PRESENTS A DROP-DOWN-->
+						<!--LIST WITH CHOICES INDICATES BY THE-->
+					    <!--<OPTION> TAGS-->
+					    	<select name="rating">
+					    		<option selected>AMAZING</option>
+					    		<option>10</option>
+					    	    <option>9</option>
+					    	    <option>8</option>
+					    	    <option>7</option>
+					    	    <option>6</option>
+					    	    <option>5</option>
+					    	    <option>4/option>
+					    	    <option>3</option>
+					    	    <option>2</option>
+					    	    <option>1</option>
+					    	    <option>AWFUL</option>
+					    	</select>
+						</label>
+					</p>
+					<p>
+						<input type="submit" value="submit">
+						<input type="reset" value="clear">
+					</p>
+				</form>
+</body>
+</html>
